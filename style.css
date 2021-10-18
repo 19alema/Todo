@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #E22865, #37ADCD);
+    font-family: Fredoka One;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+
+input {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+button {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.input button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem 25px;
+}
+
+.section .div-content button:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.remove {
+    display: none;
+}
+
+.input button {
+    margin: 0;
+    outline: 0;
+}
+
+.input input {
+    outline: 0;
+}
+
+p {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    font-size: 15px;
+
+}
+
+i.active {
+    color: limegreen;
+}
+
+i:hover {
+    color: limegreen;
+    cursor: pointer;
+}
+
+.div-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.section .div-content button {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+
+}
+
+input,
+button {
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+
+}
+
+.header i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.input button {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+i {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.div-content button {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.head i {
+    color: #fff;
+}
+
+@media(max-width: 780px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .input {
+        margin-top: 1rem;
+    }
+
+
+    .input button {
+        border-radius: 0;
+        margin-top: .8rem;
+        border-radius: 5px;
+        padding: 10px .8rem;
+        font-size: 13px;
+    }
+
+    input {
+        border-radius: 5px;
+
+    }
+
+    .div-content nav i {
+        font-size: 13px
+    }
+
+    .div-content nav button {
+        font-size: 13px
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .div-content {
+        height: 5vh;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
