@@ -139,10 +139,9 @@ i {
     position: absolute;
     bottom: 0;
     text-align: center;
-    padding: 20px 10rem;
+    padding: 20px .5rem;
     background-color: lightcoral;
     color: white;
-    left: 0; right: 0;
     opacity: 0;
     width: 100%;
     margin: 0 auto;
@@ -221,5 +220,9 @@ i {
 
     p {
         font-size: 10px;
+    }
+
+    .alert {
+        font-size: 5px;
     }
 }
