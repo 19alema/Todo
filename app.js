@@ -5,7 +5,7 @@ const btn = document.getElementById("btn");
 
 let toDisplay = document.querySelector(".section");
 
-
+let alertDisplay = document.querySelector(".alert")
 
 btn.addEventListener("click", renderTask)
 
@@ -52,9 +52,13 @@ function renderTask() {
     })
     
       icon.addEventListener("click", function() {
-        para.style.textDecoration = "line-through";
-        icon.classList.add("active");
+          para.style.textDecoration = "line-through";
+          para.style.textDecorationColor = "green";
+          para.style.textDecorationThickness = "2px"
+          icon.classList.add("active");
+          alertDisplay.classList.toggle("show-alert")
+          
+      })
    
-    })
     
     }

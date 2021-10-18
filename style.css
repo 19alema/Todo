@@ -93,6 +93,7 @@ i:hover {
     background: #fff;
     padding: 20px;
     border-radius: 5px;
+    margin: 2px 0;
 }
 
 .section .div-content button {
@@ -133,6 +134,48 @@ i {
 .head i {
     color: #fff;
 }
+
+.alert {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 20px 10rem;
+    background-color: lightcoral;
+    color: white;
+    left: 0; right: 0;
+    opacity: 0;
+    width: 100%;
+    margin: 0 auto;
+     border-radius: 8px;
+}
+
+.show-alert{
+      animation: fadeIn 1.5s,
+      fadeOut 1.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        bottom: 0;
+    }to {
+        opacity: 1;
+        bottom: 40px;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        bottom: 40px;
+    }
+
+    to {
+        opacity: 0;
+        bottom: 0;
+    }
+}
+
 
 @media(max-width: 780px) {
     .header {
